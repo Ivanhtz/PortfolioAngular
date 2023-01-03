@@ -1,0 +1,21 @@
+@import "variables";
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.9rem;
+  gap: 1.2rem;
+
+  &__link {
+    color: $textColor;
+    padding: 1rem;
+  }
+}
+
+.active {
+  color: $white;
+  border: 1px solid $textColorSpan;
+  border-radius: 20px;
+}

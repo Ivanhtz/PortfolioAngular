@@ -1,0 +1,45 @@
+@import "variables";
+
+.tech {
+  background-color: $colorSecondary;
+  border-radius: 10px;
+  margin-top: 7rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px black;
+
+  h1 {
+    text-align: center;
+    color: $textColor;
+    padding: 2rem;
+    font-size: 2.3rem;
+  }
+
+  &__grid {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .card {
+      border: 1px solid black;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 100px;
+      box-shadow: 5px 5px 5px black;
+    }
+  }
+}
+
+.ng {
+  background-color: black;
+}
+
+.nd {
+  background-color: white;
+}
+
+.git {
+  background-color: rgb(231, 132, 132);
+}

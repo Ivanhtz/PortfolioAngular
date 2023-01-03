@@ -1,0 +1,39 @@
+@import "variables";
+
+.contact {
+  background-color: $colorSecondary;
+  border-radius: 10px;
+  margin-top: 7rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px black;
+
+  &__title {
+    text-align: center;
+    color: $textColor;
+    padding: 2rem;
+    font-size: 2.3rem;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .mail {
+      width: 11rem;
+    }
+
+    .text {
+      color: $textColor;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include mobileFirst(tablet) {
+  .container {
+    max-width: 40%;
+  }
+}
