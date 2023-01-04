@@ -15,3 +15,31 @@
     >Contáctame</a
   >
 </nav>
+
+<div class="button__menu" (click)="changeSwitch()">
+  <img src="../../../assets/images/hand.png" alt="icono menu" />
+</div>
+
+<div [ngClass]="{ active: switch }" class="second__menu">
+  <a [routerLink]="['home']" routerLinkActive="active" (click)="changeSwitch()"
+    >Inicio</a
+  >
+  <a
+    [routerLink]="['technologies']"
+    routerLinkActive="active"
+    (click)="changeSwitch()"
+    >Tecnologías</a
+  >
+  <a
+    [routerLink]="['projects']"
+    routerLinkActive="active"
+    (click)="changeSwitch()"
+    >Proyectos</a
+  >
+  <a
+    [routerLink]="['contact']"
+    routerLinkActive="active"
+    (click)="changeSwitch()"
+    >Contáctame</a
+  >
+</div>

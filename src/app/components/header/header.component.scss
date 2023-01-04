@@ -9,6 +9,14 @@
   gap: 1.2rem;
 
   &__link {
+    display: none;
+
+    @include mobileFirst(tablet) {
+      display: block;
+    }
+  }
+
+  &__link {
     color: $textColor;
     padding: 1rem;
   }
@@ -18,4 +26,49 @@
   color: $white;
   border: 1px solid $textColorSpan;
   border-radius: 20px;
+}
+
+.button__menu {
+  width: 80px;
+  border: 2px solid black;
+  background-color: rgb(69, 68, 68);
+  border-radius: 50%;
+  padding: 0.7rem;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+
+  @include mobileFirst(tablet) {
+    display: none;
+  }
+}
+
+.second__menu {
+  position: fixed;
+  background-color: #582a58c0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  transition: transform 0.5s ease;
+  transform: translate(0, -100%);
+
+  a {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: $colorButtons;
+    background-color: rgba(255, 240, 240, 0.742);
+  }
+}
+
+.active {
+  transform: translate(0, 0);
 }

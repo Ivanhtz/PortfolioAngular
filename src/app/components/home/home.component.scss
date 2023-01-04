@@ -17,6 +17,10 @@
     h1 {
       color: $white;
       font-size: 4rem;
+
+      @include underSize(xs5) {
+        font-size: 2.3rem;
+      }
     }
 
     span {
@@ -29,6 +33,10 @@
       color: $textColorSpan;
       animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
       overflow: hidden;
+
+      @include underSize(xs5) {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -37,6 +45,9 @@
     align-items: center;
     justify-content: space-around;
     width: 40%;
+    @include underSize(tablet) {
+      width: 80%;
+    }
 
     p {
       font-size: 1.5rem;
@@ -47,6 +58,10 @@
     .github {
       width: 3rem;
       transition: all 0.4s ease;
+
+      @include underSize(tablet) {
+        width: 2rem;
+      }
 
       &:hover {
         transform: scale(1.2);
