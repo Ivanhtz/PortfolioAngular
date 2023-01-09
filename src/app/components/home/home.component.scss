@@ -28,10 +28,10 @@
       font-size: 2rem;
       font-family: $subtitle;
       white-space: nowrap;
-      border-right: 4px solid;
+      border-right: 5px solid;
       width: 18ch;
       color: $textColorSpan;
-      animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
+      animation: typing 1.5s steps(16), blink 0.6s infinite step-end alternate;
       overflow: hidden;
 
       @include underSize(xs5) {
